@@ -109,6 +109,60 @@ const localizations: Record<string, AppLocalization> = {
 		exit: 'Salir',
 		print: 'Imprimir',
 	},
+	hr: {
+		startSlideshow: 'Pokreni prezentaciju',
+		startSlideshowInNewWinow: 'Pokreni prezentaciju (novi prozor)',
+		exit: 'Zatvori',
+		endOfDeck: 'Kraj prezentacije',
+		showExitButton: 'Prikaži gumb za zatvaranje',
+		print: 'Ispiši',
+		printPreview: 'Pregled ispisa',
+		close: 'Zatvori',
+
+		printPreviewShownMessage: {
+			start: 'Otvoren je dijalog za pregled ispisa. Također je moguće ',
+			actionLink: 'ispisati direktno s ove stranice.',
+		},
+		exportPresentationSettings: 'Postavke izvoza prezentacije',
+		exportPresentationAsHtml: 'Izvezi prezentaciju kao HTML',
+
+		switchViewsToShowNoteViewer: 'Otvori preglednik bilješki za trenutačnu bilješku.',
+		unableToGetHtml: 'Nije moguće dobiti HTML za prikaz.',
+		switchViewsToShowMarkdownViewer: [
+			'Dodaci za prezentacije nisu uspjeli dohvatiti prikazani sadržaj trenutačne bilješke. Prikazivanje Markdown preglednika može pomoći.',
+			'Promijeniti prikaz kako bi se pokazao Markdown preglednik?'
+		].join('\n'),
+
+		settingsPaneDescription: 'Postavke za RevealJS integraciju. ' +
+			'Ako je prezentacija u tijeku, možda će se morati zatvoriti i ponovo otvoriti ' +
+			'kako bi ove postavke stupile na snagu.',
+		hideToolbarButtonSetting: 'Sakrij gumb za prezentaciju (zahtijeva ponovno pokretanje)',
+		toolbarButtonLocationSetting: 'Mjesto gumba za prezentaciju (zahtijeva ponovno pokretanje)',
+		toolbarButtonLocationSetting__note: 'Alatna traka bilješki',
+		toolbarButtonLocationSetting__editor: 'Alatna traka uređivača',
+		showSlidesOverflowSetting: 'Dozvoli klizanje pri velikim slajdovima',
+		showSpeakerNotesSetting: 'Prikaži bilješke predavača (ako postoje)',
+		rememberSlideshowPositionSetting: 'Zapamti položaj u prezentaciji',
+		rememberSlideshowPositionSetting__description:
+			'Za svaku bilješku sprema zadnji otvoreni slajd i prelazi na njega pri pokretanju prezentacije. Ovaj se položaj sinkronizira na svim uređajima.',
+
+		presentationTheme: 'Zadana tema',
+		presentationTheme__description: 'Zadana tema koja se koristi za prikaz, izvoz i ispis prezentacija. '
+			+ 'Napomena: „Uskladi s Joplinom” se primjenjuje samo na prezentacije pokrenute unutar Joplina. Ispis i izvoz će koristiti svijetlu temu.',
+		theme__matchJoplin: 'Uskladi s Joplinom',
+		theme__dark: 'Tamna',
+		theme__light: 'Svijetla',
+		theme__blackOnWhite: 'Crno na bijelo',
+		theme__graphPaper: 'Papir s kvadratićima',
+		theme__darkBlue: 'Tamnoplava',
+		theme__lightBlue: 'Svijetloplava',
+		theme__darkRed: 'Tamnocrvena',
+
+		showSlideNumbers: 'Prikaži brojeve slajdova',
+		slideNumbers__none: 'Nema',
+		slideNumbers__current: 'Trenutačni broj slajdova',
+		slideNumbers__currentAndTotal: 'Trenutačno i ukupno',
+	},
 };
 
 let localization: AppLocalization|undefined;
